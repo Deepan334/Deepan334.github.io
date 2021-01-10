@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>startbuck</title>
+    <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+    <header class="top">
+        <div class="left">
+            <img src="pic/logo.png" alt="HomeLogo">
+        </div>
+        <div class="right">
+            <ul class="list">
+                <li>Home</li>
+                <li>Menu</li>
+                <li>What's New</li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </header>
+    <section class="mid">
+        <div class="content">
+            <h1>it's not just coffee <br> it's <span>Starbucks</span></h1> <br>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos sapiente<br> quisquam ab error obcaecati rem reiciendis 
+                quo necessitatibus vitae debitis,<br>  deserunt quae optio, 
+                accusantium.</h4>
+                <div class="button">Learn More</div>
+                <div class="thumb">
+                    <img src="pic\thumb1.png"  onclick="cha('img1.png');">
+                    <img src="pic\thumb2.png"  onclick="cha('img2.png');color('#ffc0cb')">
+                    <img src="pic\thumb3.png"  onclick="cha('img3.png');color('#ff69b4')">
+                 </div>
+        </div>
+        <aside class="box">
+        <div class="pic">
+            <div id="back">
+                <div class="main"><img src="img1.png" class='image'></span></div>
+            </div>
+            <div class="social">
+                <ul>
+                   <li> <img src="pic/facebook.png" alt="fb"></li>
+                   <li><img src="pic/twitter.png" alt="tw"></li>
+                   <li><img src="pic/instagram.png" alt="inst"></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    </section>
+    <script type="text/javascript">
+       function cha(dee){
+           document.querySelector('.image').src=dee;
+           document.getElementById('back').style.background = '#2e8b57';
+       }
+       function color(real)
+       {
+           const cir = document.querySelector('#back');
+           cir.style.background = real;
+       }
+    </script>
+</body>
+</html>
